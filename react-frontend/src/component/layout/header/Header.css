@@ -1,0 +1,82 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #0b1220 0%, #1e293b 50%, #0b1220 100%);
+  color: #e2e8f0;
+  padding: 0 32px;
+  height: 68px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.Header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #fbbf24 0%, #d4a017 50%, #f5d76e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Header .links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.Header .links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.Header .links a:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+  color: #fbbf24;
+}
+
+.Header .links a.active {
+  background-color: rgba(212, 175, 55, 0.15);
+  color: #fbbf24;
+}
+
+.Header .links span {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  padding: 0 12px 0 4px;
+  border-right: 1px solid rgba(148, 163, 184, 0.2);
+  margin-right: 8px;
+  letter-spacing: 0.3px;
+}
+
+.Header .links button {
+  background: transparent;
+  color: #fca5a5;
+  border: 1px solid rgba(252, 165, 165, 0.3);
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-left: 8px;
+  transition: all 0.2s ease;
+}
+
+.Header .links button:hover {
+  background: rgba(252, 165, 165, 0.12);
+  border-color: #fca5a5;
+  color: #fecaca;
+}
