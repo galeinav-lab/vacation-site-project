@@ -3,7 +3,7 @@ class AppConfig {
 }
 
 class DevAppConfig extends AppConfig {
-    serverAddress = "http://localhost:5000";
+    serverAddress = process.env.REACT_APP_API_URL || "http://localhost:5000";
     apiAddress: string = this.serverAddress + "/api/";
     uploadsAddress: string = this.serverAddress + "/uploads/";
 }
