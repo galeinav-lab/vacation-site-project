@@ -5,6 +5,7 @@ class Dal {
 
     private options: PoolOptions = {
         host: appConfig.host,
+        port: appConfig.port,
         user: appConfig.user,
         password: appConfig.password,
         database: appConfig.database,
